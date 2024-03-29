@@ -67,8 +67,9 @@ public class FilmsManagerTest {
         manager.addFilm("Отель 'Белград'");
         manager.addFilm("Джентльмены");
         manager.addFilm("Человек-невидимка");
+        manager.addFilm("Тролли. Мировой тур");
 
-        String[] expected = {"Человек-невидимка", "Джентльмены", "Отель 'Белград'", "Вперёд", "Бладшот"};
+        String[] expected = {"Тролли. Мировой тур", "Человек-невидимка", "Джентльмены", "Отель 'Белград'", "Вперёд"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
